@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/myapp/static/css/main.3e61d0f4.chunk.css",
+    "main.css": "/myapp/static/css/main.446ad4dd.chunk.css",
     "main.js": "/myapp/static/js/main.5a9aa6d3.chunk.js",
     "main.js.map": "/myapp/static/js/main.5a9aa6d3.chunk.js.map",
     "runtime-main.js": "/myapp/static/js/runtime-main.98e5d896.js",
@@ -10,14 +10,14 @@
     "static/js/3.be99ca6b.chunk.js": "/myapp/static/js/3.be99ca6b.chunk.js",
     "static/js/3.be99ca6b.chunk.js.map": "/myapp/static/js/3.be99ca6b.chunk.js.map",
     "index.html": "/myapp/index.html",
-    "static/css/main.3e61d0f4.chunk.css.map": "/myapp/static/css/main.3e61d0f4.chunk.css.map",
+    "static/css/main.446ad4dd.chunk.css.map": "/myapp/static/css/main.446ad4dd.chunk.css.map",
     "static/js/2.aaff7b46.chunk.js.LICENSE.txt": "/myapp/static/js/2.aaff7b46.chunk.js.LICENSE.txt",
     "static/media/App.css": "/myapp/static/media/college.cfdc9984.png"
   },
   "entrypoints": [
     "static/js/runtime-main.98e5d896.js",
     "static/js/2.aaff7b46.chunk.js",
-    "static/css/main.3e61d0f4.chunk.css",
+    "static/css/main.446ad4dd.chunk.css",
     "static/js/main.5a9aa6d3.chunk.js"
   ]
 }
