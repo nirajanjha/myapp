@@ -1,14 +1,40 @@
+import { useEffect, useState } from "react";
 import "./App.css";
 import data from "./data/colleges.json";
 
 function App() {
-	const collegeData = data.colleges;
-	console.log(collegeData);
+	const collegeData = data.colleges.slice(0, 10);
+	const [isFetching, setIsFetching] = useState(false);
+	const [num, setNum] = useState(20);
+	const [college, setCollege] = useState(collegeData);
+
+	function isScrolling() {
+		if (
+			window.innerHeight + document.documentElement.scrollTop !==
+			document.documentElement.offsetHeight
+		) {
+			return;
+		} else {
+			setIsFetching(true);
+		}
+	}
+	useEffect(() => {
+		window.addEventListener("scroll", isScrolling);
+		return () => window.removeEventListener("scroll", isScrolling);
+	}, []);
+
+	useEffect(() => {
+		if (isFetching) {
+			setCollege(data.colleges.slice(0, num));
+			setNum(num + 10);
+			setIsFetching(false);
+		}
+	}, [isFetching]);
 	return (
 		<div className="layout">
 			<h1 className="heading">Colleges in North India</h1>
 			<div className="wrapper">
-				{collegeData.map((data) => {
+				{college.map((data) => {
 					return (
 						<div className="college-section">
 							<div className="img-wrapper">
