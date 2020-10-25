@@ -105,7 +105,13 @@ function App() {
 									</p>
 								</div>
 								<div className="college-description-right">
-									<p className="price">₹{data.original_fees}</p>
+									<div className="marked-price">
+										<p className="price">₹{data.original_fees}</p>
+										<div className="price-status">
+											<p>20</p>
+										</div>
+									</div>
+
 									<p className="discounted-price">₹ {data.discounted_fees}</p>
 									<p className="time-duration">Per Semester (3months)</p>
 								</div>

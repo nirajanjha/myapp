@@ -146,6 +146,32 @@
 	font-size: 11px;
 }
 
+.marked-price {
+	display: flex;
+	position: relative;
+	left: 15px;
+}
+
+.price-status {
+	position: absolute;
+	top: 5px;
+	border-bottom: 13px solid transparent;
+	border-top: 13px solid transparent;
+	border-right: 25px solid #dd1c26;
+	height: 0;
+	width: 32px;
+	left: 6px;
+}
+
+.price-status p {
+	position: absolute;
+	top: -30px;
+	background-color: #dd1c26;
+	padding: 5px 10px 5px 5px;
+	right: -56px;
+	color: #ffffff;
+}
+
 .discounted-price {
 	color: #dd1c26;
 	font-size: 28.5px;
